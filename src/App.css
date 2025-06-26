@@ -1,0 +1,22 @@
+.weather-container{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("sunny.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-container{
+  background: rgb(0, 255, 166);
+  height: 20rem;  
+  color: #000;
+}
+
+.search-bar{
+  outline: none;
+  width: 80%;
+}
