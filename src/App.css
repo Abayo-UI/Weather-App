@@ -1,7 +1,6 @@
 .weather-container{
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -36,6 +36,7 @@ const Weather = () => {
           setSearch(search)
           const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=de8fe0e6430a2a8265e3981601e97e9d`);
           const data = await response.json();
+          console.log(data)
           if (data.cod === "404" || data.cod === 404) {
             setError("City not found. Please check the spelling or try another city.");
             setWeatherData({});
@@ -65,7 +66,7 @@ const Weather = () => {
         { loading 
           ? (
               <div className="d-flex justify-content-center align-items-center" style={{minHeight: '100px'}}>
-                <div className="spinner-border text-primary" role="status">
+                <div className="spinner-border text-dark" role="status" style={{ width: "3rem", height: "3rem" }}>
                   <span className="visually-hidden">Loading...</span>
                 </div>
               </div>
