@@ -58,9 +58,9 @@ const Weather = () => {
 
 
   return (
-    <div className="weather-container pt-5">
+    <div className="weather-container pt-5" style={{backgroundImage: `url(/sunny.jpg)`}}>
         <h3 className="text-center">Enter your city below to get its weather details</h3>
-      <div className="inner-container col-lg-6 col-11 rounded-4 px-2 pt-3">
+      <div className="inner-container col-lg-5 col-11 rounded-4 px-2 pt-3">
         <Search  setSearch={setSearch} handleSearch={handleSearch} search={search}/>
         { loading 
           ? (
